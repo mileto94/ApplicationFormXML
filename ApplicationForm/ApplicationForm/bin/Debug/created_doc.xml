@@ -1,0 +1,17 @@
+<Applicants>
+  <Applicant>
+    <PersonalInfo FirstName="First Name" LastName="Last Name" Age="Age" Email="Email">
+      <Address Country="Country" State="State" City="City" />
+      <PhoneNumber>Phone Number</PhoneNumber>
+      <Passwords>
+        <Password>Password</Password>
+        <ConfirmPassword>Confirm Password</ConfirmPassword>
+      </Passwords>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="FacNumber" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses />
+    </StudentInfo>
+  </Applicant>
+</Applicants>

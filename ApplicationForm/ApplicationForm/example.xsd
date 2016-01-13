@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Applicants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Applicant" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonalInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Address">
+                      <xs:complexType>
+                        <xs:attribute name="Country" type="xs:string" use="required" />
+                        <xs:attribute name="State" type="xs:string" use="required" />
+                        <xs:attribute name="City" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PhoneNumber" />
+                    <xs:element name="Passwords">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Password" />
+                          <xs:element name="ConfirmPassword" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="FirstName" type="xs:string" use="required" />
+                  <xs:attribute name="LastName" type="xs:string" use="required" />
+                  <xs:attribute name="Age" use="required" >
+                    <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:pattern value="(1[7-9]|[2-7]\d{1})"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:attribute>
+                  <xs:attribute name="Email" use="required" >
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value=".*@.*\..*"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="StudentInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MainCourse" />
+                    <xs:element name="OptionalCourses">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="OptionalCourse">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Professor">
+                                  <xs:complexType>
+                                    <xs:attribute name="FirstName" type="xs:string" use="required" />
+                                    <xs:attribute name="LastName" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Name" type="xs:string" use="required" />
+                              <xs:attribute name="Credits" use="required" >
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:int">
+                                    <xs:pattern value="[1-9]"></xs:pattern>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                    <xs:attribute name="FacultyNumber" >
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:pattern value="((59|61)\d{3})"></xs:pattern>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:attribute>
+                  <xs:attribute name="Course" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
