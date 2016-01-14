@@ -58,30 +58,10 @@ namespace ApplicationForm
             System.Windows.Forms.Application.Exit();
         }
 
-        private String clearCheckboxes()
+        private void clearCheckboxes()
         {
-            foreach (Control control in Controls)
-            {
-
-                CheckBox chkBox = control as CheckBox;
-
-                if (chkBox != null && chkBox.Checked)
-                {
-
-                    chkBox.Checked = false;
-                    return chkBox.Text;
-                }
-
-            }
-            //foreach (CheckBox c in this.optionalCourses.Items)
-            //{
-            //    if (c.Checked)
-            //    {
-            //        c.Checked = false;
-                    
-            //    }
-            //}
-            return "";
+            for (int i = 0; i < optionalCourses.Items.Count; i++)
+                optionalCourses.SetItemCheckState(i, CheckState.Unchecked);
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -101,13 +81,13 @@ namespace ApplicationForm
             this.clearCheckboxes();
         }
 
-        private void loadFile(XmlDocument doc, String fileName)
-        {
-            doc.Load(fileName);
-            XmlNode root = doc.FirstChild;
-        }
+        //private void loadFile(XmlDocument doc, String fileName)
+        //{
+        //    doc.Load(fileName);
+        //    XmlNode root = doc.FirstChild;
+        //}
 
-        private void createFile(XmlDocument doc, String fileName)
+        private void createFile()
         {
             XmlElement applicants = doc.CreateElement("Applicants");
             XmlElement applicant = doc.CreateElement("Applicant");
@@ -161,7 +141,7 @@ namespace ApplicationForm
             }
             if (this.optionalCourses.CheckedItems.Count > 0)
             {
-                //this.clearCheckboxes();
+                this.clearCheckboxes();
             }
 
             studentInfo.AppendChild(mainCourse);
@@ -170,8 +150,17 @@ namespace ApplicationForm
             applicant.AppendChild(personalInfo);
             applicant.AppendChild(studentInfo);
             applicants.AppendChild(applicant);
-            doc.AppendChild(applicants);
-            doc.Save(fileName);
+            if (File.Exists(xml))
+            {
+                doc.Load(xml);
+                XmlNode root = doc.FirstChild;
+                root.AppendChild(applicant);
+            }
+            else
+            {
+                doc.AppendChild(applicants);
+            }
+            doc.Save(xml);
         }
 
         private String getCourse()
@@ -189,15 +178,10 @@ namespace ApplicationForm
 
         private void submit_Click(object sender, EventArgs e)
         {
-            if (File.Exists(xml))
-            {
-                //this.loadFile(doc, xml);
-                this.createFile(doc, xml);
-            }
-            else
-            {
-                this.createFile(doc, xml);
-            }
+            errorsContainer.Visible = false;
+            errorsContainer.Text = "";
+
+            createFile();
             if (validate())
             {
                 this.clear.PerformClick();
@@ -230,7 +214,6 @@ namespace ApplicationForm
             });
 
             Console.WriteLine("doc1 {0}", hasErrors ? "did not validate" : "validated");
-            
             return hasErrors;
         }
 
