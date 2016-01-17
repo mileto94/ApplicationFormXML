@@ -197,9 +197,6 @@ namespace ApplicationForm
                 hasErrors = true;
                 if (hasErrors)
                 {
-                    errorsContainerLabel.Visible = true;
-                    errorsContainer.Visible = true;
-                    errorsContainer.Text = error.Message;
                     Console.WriteLine(error.Severity);
 
                     using (StreamWriter sw = File.AppendText(error_log))
@@ -210,12 +207,6 @@ namespace ApplicationForm
                             error.Message
                         ));
                     }
-                }
-                else
-                {
-                    errorsContainerLabel.Visible = false;
-                    errorsContainer.Visible = false;
-                    errorsContainer.Text = "";
                 }
             });
 
