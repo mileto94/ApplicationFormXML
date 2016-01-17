@@ -110,4 +110,60 @@
       <OptionalCourses />
     </StudentInfo>
   </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Programming Languages &amp; Logics" Credits="6">
+          <Professor FirstName="John" LastName="Grisham" />
+        </OptionalCourse>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Web Information Systems (must take as CS)" Credits="3">
+          <Professor FirstName="Ben" LastName="Stiler" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses />
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+        <OptionalCourse Name="Introduction to Database Systems" Credits="3">
+          <Professor FirstName="Glen" LastName="Moss" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
 </Applicants>

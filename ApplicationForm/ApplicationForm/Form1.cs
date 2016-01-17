@@ -197,8 +197,6 @@ namespace ApplicationForm
                 hasErrors = true;
                 if (hasErrors)
                 {
-                    Console.WriteLine(error.Severity);
-
                     using (StreamWriter sw = File.AppendText(error_log))
                     {
                         sw.WriteLine(String.Format(
@@ -220,6 +218,7 @@ namespace ApplicationForm
             xml = @".\created_doc.xml";
             error_log = @".\error_log.txt";
             doc = new XmlDocument();
+            System.IO.File.WriteAllText(error_log, "");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
