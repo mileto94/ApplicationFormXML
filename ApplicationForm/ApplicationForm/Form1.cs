@@ -16,7 +16,7 @@ namespace ApplicationForm
     public partial class appForm : Form
     {
         private XmlDocument doc;
-        private String xsd, xml;
+        private String xsd, xml, error_log;
 
         public appForm()
         {
@@ -74,11 +74,13 @@ namespace ApplicationForm
             this.city.Text = "";
             this.phoneNumber.Text = "";
             this.age.Text = "";
-            this.password.Text = "";
-            this.confirmPassword.Text = "";
             this.facNumber.Text = "";
             this.mainCourse.Text = "";
             this.clearCheckboxes();
+            this.course1.Checked = false;
+            this.course2.Checked = false;
+            this.course3.Checked = false;
+            this.course4.Checked = false;
         }
 
         //private void loadFile(XmlDocument doc, String fileName)
@@ -105,17 +107,8 @@ namespace ApplicationForm
             XmlElement phoneNumber = doc.CreateElement("PhoneNumber");
             phoneNumber.InnerText = this.phoneNumber.Text;
 
-            XmlElement passwords = doc.CreateElement("Passwords");
-            XmlElement password = doc.CreateElement("Password");
-            password.InnerText = this.password.Text;
-            XmlElement confirmPassword = doc.CreateElement("ConfirmPassword");
-            confirmPassword.InnerText = this.confirmPassword.Text;
-            passwords.AppendChild(password);
-            passwords.AppendChild(confirmPassword);
-
             personalInfo.AppendChild(address);
             personalInfo.AppendChild(phoneNumber);
-            personalInfo.AppendChild(passwords);
 
             XmlElement studentInfo = doc.CreateElement("StudentInfo");
             studentInfo.SetAttribute("FacultyNumber", this.facNumber.Text);
@@ -178,15 +171,11 @@ namespace ApplicationForm
 
         private void submit_Click(object sender, EventArgs e)
         {
-            errorsContainer.Visible = false;
-            errorsContainer.Text = "";
-
             createFile();
             if (validate())
             {
                 this.clear.PerformClick();
             }
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -208,8 +197,25 @@ namespace ApplicationForm
                 hasErrors = true;
                 if (hasErrors)
                 {
+                    errorsContainerLabel.Visible = true;
                     errorsContainer.Visible = true;
                     errorsContainer.Text = error.Message;
+                    Console.WriteLine(error.Severity);
+
+                    using (StreamWriter sw = File.AppendText(error_log))
+                    {
+                        sw.WriteLine(String.Format(
+                            "{0}: {1}",
+                            error.Severity,
+                            error.Message
+                        ));
+                    }
+                }
+                else
+                {
+                    errorsContainerLabel.Visible = false;
+                    errorsContainer.Visible = false;
+                    errorsContainer.Text = "";
                 }
             });
 
@@ -221,7 +227,57 @@ namespace ApplicationForm
         {
             xsd = @".\..\..\schema.xsd";
             xml = @".\created_doc.xml";
+            error_log = @".\error_log.txt";
             doc = new XmlDocument();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void readFile_Click(object sender, EventArgs e)
+        {
+            doc.Load(xml);
+            XmlNode applicants = doc.FirstChild;
+            List<String> data = new List<String>();
+            foreach (XmlNode applicant in applicants.ChildNodes)
+            {
+                XmlNode personalInfo = applicant.FirstChild;
+                data.Add(String.Format("First Name: {0}", personalInfo.Attributes["FirstName"].Value));
+                data.Add(String.Format("Last Name: {0}", personalInfo.Attributes["LastName"].Value));
+                data.Add(String.Format("Age: {0}", personalInfo.Attributes["Age"].Value));
+                data.Add(String.Format("Email: {0}", personalInfo.Attributes["Email"].Value));
+                XmlNode address = personalInfo.FirstChild;
+                data.Add(String.Format("Country: {0}", address.Attributes["Country"].Value));
+                data.Add(String.Format("State: {0}", address.Attributes["State"].Value));
+                data.Add(String.Format("City: {0}", address.Attributes["City"].Value));
+                XmlNode phone = address.NextSibling;
+                data.Add(String.Format("Phone Number: {0}", address.InnerText));
+
+                XmlNode studentInfo = personalInfo.NextSibling;
+                data.Add(String.Format("FacultyNumber: {0}", studentInfo.Attributes["FacultyNumber"].Value));
+                data.Add(String.Format("Course: {0}", studentInfo.Attributes["Course"].Value));
+                XmlNode mainCourse = studentInfo.FirstChild;
+                data.Add(String.Format("Main Course: {0}", mainCourse.InnerText));
+                XmlNode optionalCourses = mainCourse.NextSibling;
+                if(optionalCourses.ChildNodes.Count > 0)
+                    data.Add("Optional Courses");
+                foreach(XmlNode optionalCourse in optionalCourses.ChildNodes)
+                {
+                    data.Add(String.Format("   Course Name: {0}", optionalCourse.Attributes["Name"].Value));
+                    data.Add(String.Format("   Credits: {0}", optionalCourse.Attributes["Credits"].Value));
+                    XmlNode professor = optionalCourse.FirstChild;
+                    data.Add(String.Format(
+                        "   Professor: {0} {1}",
+                        professor.Attributes["FirstName"].Value,
+                        professor.Attributes["LastName"].Value));
+                }
+                data.Add("---------------------------------");
+            }
+            Form2 readForm = new Form2();
+            readForm.Show();
+            readForm.containerInterface = String.Join("\n", data);
         }
     }
 }

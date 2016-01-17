@@ -17,14 +17,6 @@
                       </xs:complexType>
                     </xs:element>
                     <xs:element name="PhoneNumber" />
-                    <xs:element name="Passwords">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="Password" />
-                          <xs:element name="ConfirmPassword" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
                   </xs:sequence>
                   <xs:attribute name="FirstName" type="xs:string" use="required" />
                   <xs:attribute name="LastName" type="xs:string" use="required" />

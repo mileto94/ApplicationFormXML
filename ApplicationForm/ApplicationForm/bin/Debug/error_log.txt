@@ -1,0 +1,20 @@
+Error: The 'Age' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The 'Email' attribute is invalid - The value '' is invalid according to its datatype 'String' - The Pattern constraint failed. 0
+Error: The 'FacultyNumber' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The element 'OptionalCourses' has incomplete content. List of possible elements expected: 'OptionalCourse'. 0
+Error: The 'Age' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The 'Email' attribute is invalid - The value '' is invalid according to its datatype 'String' - The Pattern constraint failed. 0
+Error: The 'FacultyNumber' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The element 'OptionalCourses' has incomplete content. List of possible elements expected: 'OptionalCourse'. 0
+Error: The 'Age' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The 'Email' attribute is invalid - The value '' is invalid according to its datatype 'String' - The Pattern constraint failed. 0
+Error: The 'FacultyNumber' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The element 'OptionalCourses' has incomplete content. List of possible elements expected: 'OptionalCourse'. 0
+Error: The 'Age' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The 'Email' attribute is invalid - The value '' is invalid according to its datatype 'String' - The Pattern constraint failed. 0
+Error: The 'FacultyNumber' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The element 'OptionalCourses' has incomplete content. List of possible elements expected: 'OptionalCourse'. 0
+Error: The 'Age' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The 'Email' attribute is invalid - The value '' is invalid according to its datatype 'String' - The Pattern constraint failed. 0
+Error: The 'FacultyNumber' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed. 0
+Error: The element 'OptionalCourses' has incomplete content. List of possible elements expected: 'OptionalCourse'. 0

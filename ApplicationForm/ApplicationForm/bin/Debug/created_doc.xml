@@ -1,45 +1,108 @@
 <Applicants>
   <Applicant>
-    <PersonalInfo FirstName="First Name" LastName="Last Name" Age="Age" Email="Email">
-      <Address Country="Country" State="State" City="City" />
-      <PhoneNumber>Phone Number</PhoneNumber>
-      <Passwords>
-        <Password>Password</Password>
-        <ConfirmPassword>Confirm Password</ConfirmPassword>
-      </Passwords>
+    <PersonalInfo FirstName="Milka" LastName="fere" Age="32" Email="sdsad@sf.vf">
+      <Address Country="asdfasf" State="sdfsf" City="Asda" />
+      <PhoneNumber>58585858</PhoneNumber>
     </PersonalInfo>
-    <StudentInfo FacultyNumber="FacNumber" Course="">
-      <MainCourse>
-      </MainCourse>
-      <OptionalCourses />
+    <StudentInfo FacultyNumber="61710" Course="3">
+      <MainCourse>Computer Science</MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+      </OptionalCourses>
     </StudentInfo>
   </Applicant>
   <Applicant>
-    <PersonalInfo FirstName="First Name" LastName="Last Name" Age="Age" Email="Email">
-      <Address Country="Country" State="State" City="City" />
-      <PhoneNumber>Phone Number</PhoneNumber>
-      <Passwords>
-        <Password>Password</Password>
-        <ConfirmPassword>Confirm Password</ConfirmPassword>
-      </Passwords>
+    <PersonalInfo FirstName="Milka" LastName="fere" Age="32" Email="sdsad@sf.vf">
+      <Address Country="asdfasf" State="sdfsf" City="Asda" />
+      <PhoneNumber>58585858</PhoneNumber>
     </PersonalInfo>
-    <StudentInfo FacultyNumber="FacNumber" Course="">
-      <MainCourse>
-      </MainCourse>
-      <OptionalCourses />
+    <StudentInfo FacultyNumber="61710" Course="3">
+      <MainCourse>Computer Science</MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+      </OptionalCourses>
     </StudentInfo>
   </Applicant>
   <Applicant>
-    <PersonalInfo FirstName="csfsfsf" LastName="sgsg" Age="" Email="">
-      <Address Country="" State="sadgg" City="" />
+    <PersonalInfo FirstName="Milka" LastName="fere" Age="32" Email="sdsad@sf.vf">
+      <Address Country="asdfasf" State="sdfsf" City="Asda" />
+      <PhoneNumber>58585858</PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="61710" Course="3">
+      <MainCourse>Computer Science</MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="xdfb" State="" City="" />
       <PhoneNumber>
       </PhoneNumber>
-      <Passwords>
-        <Password>
-        </Password>
-        <ConfirmPassword>
-        </ConfirmPassword>
-      </Passwords>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses />
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses />
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses />
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses />
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
     </PersonalInfo>
     <StudentInfo FacultyNumber="" Course="">
       <MainCourse>
