@@ -6,12 +6,11 @@ D:\SU\3rd_Course\XML\Project\ApplicationForm\ApplicationForm\obj\x86\Debug\Appli
 D:\SU\3rd_Course\XML\Project\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.exe
 D:\SU\3rd_Course\XML\Project\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.pdb
 D:\SU\3rd_Course\XML\Project\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.csprojResolveAssemblyReference.cache
-D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.exe
-D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.pdb
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\bin\Debug\ApplicationForm.exe
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\bin\Debug\ApplicationForm.pdb
-D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.csprojResolveAssemblyReference.cache
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.appForm.resources
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.readForm.resources
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.Properties.Resources.resources
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.csproj.GenerateResource.Cache
-D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.Form2.resources
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.exe
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.pdb

@@ -1,0 +1,21 @@
+<Applicants>
+  <Applicant>
+    <PersonalInfo FirstName="" LastName="" Age="" Email="">
+      <Address Country="" State="" City="" />
+      <PhoneNumber>
+      </PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="" Course="">
+      <MainCourse>
+      </MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Numerical Analysis and Differential Equations  (must take as CS)" Credits="4">
+          <Professor FirstName="Joshua" LastName="Collins" />
+        </OptionalCourse>
+        <OptionalCourse Name="Information Retrieval (must take as CS)" Credits="2">
+          <Professor FirstName="Ron" LastName="Moss" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
+</Applicants>

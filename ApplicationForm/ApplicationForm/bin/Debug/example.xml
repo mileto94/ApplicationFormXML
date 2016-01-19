@@ -3,24 +3,20 @@
 
   <Applicant>
 
-    <PersonalInfo FirstName="" LastName="" Age="17" Email="lqlq@ldl.com">
-      <Address Country="" State="" City=""/>
-      <PhoneNumber></PhoneNumber>
-      <Passwords>
-        <Password></Password>
-        <ConfirmPassword></ConfirmPassword>
-      </Passwords>
+    <PersonalInfo FirstName="Ivan" LastName="Georgiev" Age="17" Email="lqlq@ldl.com">
+      <Address Country="Test Country" State="Test Sate" City="Test City"/>
+      <PhoneNumber>5558989</PhoneNumber>
     </PersonalInfo>
 
-    <StudentInfo FacultyNumber="59342" Course="">
-      <MainCourse></MainCourse>
+    <StudentInfo FacultyNumber="59342" Course="3">
+      <MainCourse>Software Engineering</MainCourse>
       <OptionalCourses>
-        <OptionalCourse Name="" Credits="5">
-          <Proffessor FirstName="" LastName=""></Proffessor>
+        <OptionalCourse Name="OOP" Credits="5">
+          <Proffessor FirstName="Ivan" LastName="Gecov"></Proffessor>
         </OptionalCourse>
 
-        <OptionalCourse Name="" Credits="1">
-          <Proffessor FirstName="" LastName=""></Proffessor>
+        <OptionalCourse Name="Java Script" Credits="6">
+          <Proffessor FirstName="Minko" LastName="Minchev"></Proffessor>
         </OptionalCourse>
       </OptionalCourses>
 

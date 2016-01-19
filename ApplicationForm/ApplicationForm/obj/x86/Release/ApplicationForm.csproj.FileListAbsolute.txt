@@ -1,0 +1,9 @@
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\bin\Release\ApplicationForm.exe
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\bin\Release\ApplicationForm.pdb
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.appForm.resources
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.readForm.resources
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.Properties.Resources.resources
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.csproj.GenerateResource.Cache
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.exe
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.pdb
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Release\ApplicationForm.csprojResolveAssemblyReference.cache

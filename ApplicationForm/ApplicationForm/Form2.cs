@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace ApplicationForm
 {
-    public partial class Form2 : Form
+    public partial class readForm : Form
     {
-        public Form2()
+        public readForm()
         {
             InitializeComponent();
         }

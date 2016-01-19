@@ -1,6 +1,6 @@
 ﻿namespace ApplicationForm
 {
-    partial class Form2
+    partial class readForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,10 +39,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.container.BackColor = System.Drawing.Color.MintCream;
+            this.container.Cursor = System.Windows.Forms.Cursors.Hand;
             this.container.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.container.ForeColor = System.Drawing.SystemColors.Highlight;
             this.container.Location = new System.Drawing.Point(39, 55);
             this.container.Name = "container";
+            this.container.ReadOnly = true;
             this.container.Size = new System.Drawing.Size(618, 396);
             this.container.TabIndex = 18;
             this.container.Text = "";
@@ -54,7 +56,7 @@
             this.close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.close.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.close.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.close.Location = new System.Drawing.Point(283, 467);
+            this.close.Location = new System.Drawing.Point(289, 467);
             this.close.MaximumSize = new System.Drawing.Size(112, 36);
             this.close.MinimumSize = new System.Drawing.Size(112, 36);
             this.close.Name = "close";
@@ -72,13 +74,13 @@
             this.label2.BackColor = System.Drawing.Color.MintCream;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(215, 20);
+            this.label2.Location = new System.Drawing.Point(237, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(220, 20);
             this.label2.TabIndex = 34;
             this.label2.Text = "Selected optional Courses";
             // 
-            // Form2
+            // readForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,7 +90,7 @@
             this.Controls.Add(this.close);
             this.Controls.Add(this.container);
             this.MinimumSize = new System.Drawing.Size(724, 553);
-            this.Name = "Form2";
+            this.Name = "readForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Read Data From XML";
             this.ResumeLayout(false);

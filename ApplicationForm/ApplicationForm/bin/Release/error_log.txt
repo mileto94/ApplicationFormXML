@@ -1,0 +1,3 @@
+Error: The 'Age' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed.
+Error: The 'Email' attribute is invalid - The value '' is invalid according to its datatype 'String' - The Pattern constraint failed.
+Error: The 'FacultyNumber' attribute is invalid - The value '' is invalid according to its datatype 'Int' - The Pattern constraint failed.

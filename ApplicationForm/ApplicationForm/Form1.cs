@@ -83,12 +83,6 @@ namespace ApplicationForm
             this.course4.Checked = false;
         }
 
-        //private void loadFile(XmlDocument doc, String fileName)
-        //{
-        //    doc.Load(fileName);
-        //    XmlNode root = doc.FirstChild;
-        //}
-
         private void createFile()
         {
             XmlElement applicants = doc.CreateElement("Applicants");
@@ -121,7 +115,6 @@ namespace ApplicationForm
             foreach(String optCourse in this.optionalCourses.CheckedItems) {
                 XmlElement optionalCourse = doc.CreateElement("OptionalCourse");
                 String[] text = optCourse.Split('/');
-                //int credits = int.Parse(text[1]);
                 String credits = text[1];
                 String[] names = text[2].Split(' ');
                 optionalCourse.SetAttribute("Name", text[0]);
@@ -135,6 +128,12 @@ namespace ApplicationForm
             if (this.optionalCourses.CheckedItems.Count > 0)
             {
                 this.clearCheckboxes();
+            }
+            else
+            {
+                ErrorProvider e = new ErrorProvider();
+                e.SetError(this.optionalCourses, "You must select at least one course!");
+                return;
             }
 
             studentInfo.AppendChild(mainCourse);
@@ -175,6 +174,7 @@ namespace ApplicationForm
             if (validate())
             {
                 this.clear.PerformClick();
+                this.readFile.Enabled = true;
             }
         }
 
@@ -187,6 +187,9 @@ namespace ApplicationForm
         {
             XmlSchemaSet schemas = new XmlSchemaSet();
             schemas.Add("", xsd);
+
+            if (!File.Exists(xml))
+                return false;
 
             XDocument document = XDocument.Load(xml);
 
@@ -228,7 +231,17 @@ namespace ApplicationForm
 
         private void readFile_Click(object sender, EventArgs e)
         {
-            doc.Load(xml);
+            try
+            {
+                doc.Load(xml);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.readFile.Enabled = false;
+                return;
+            }
+
             XmlNode applicants = doc.FirstChild;
             List<String> data = new List<String>();
             foreach (XmlNode applicant in applicants.ChildNodes)
@@ -265,7 +278,7 @@ namespace ApplicationForm
                 }
                 data.Add("---------------------------------");
             }
-            Form2 readForm = new Form2();
+            readForm readForm = new readForm();
             readForm.Show();
             readForm.containerInterface = String.Join("\n", data);
         }
