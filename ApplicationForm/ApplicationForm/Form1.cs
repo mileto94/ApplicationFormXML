@@ -10,13 +10,15 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
+using System.Xml.XPath;
+using System.Xml.Xsl;
 
 namespace ApplicationForm
 {
     public partial class appForm : Form
     {
         private XmlDocument doc;
-        private String xsd, xml, error_log;
+        private String xsd, xml, xslt, styledXML, error_log;
 
         public appForm()
         {
@@ -219,6 +221,8 @@ namespace ApplicationForm
         {
             xsd = @".\..\..\schema.xsd";
             xml = @".\created_doc.xml";
+            xslt = @".\..\..\representData.xslt";
+            styledXML = @".\styledXml.html";
             error_log = @".\error_log.txt";
             doc = new XmlDocument();
             System.IO.File.WriteAllText(error_log, "");
@@ -281,6 +285,15 @@ namespace ApplicationForm
             readForm readForm = new readForm();
             readForm.Show();
             readForm.containerInterface = String.Join("\n", data);
+        }
+
+        private void readData_Click(object sender, EventArgs e)
+        {
+            XPathDocument myXPathDoc = new XPathDocument(xml);
+            XslCompiledTransform myXslTrans = new XslCompiledTransform();
+            myXslTrans.Load(xslt);
+            XmlTextWriter myWriter = new XmlTextWriter(styledXML, null);
+            myXslTrans.Transform(myXPathDoc, null, myWriter);
         }
     }
 }

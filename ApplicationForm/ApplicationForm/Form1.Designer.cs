@@ -59,6 +59,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.readFile = new System.Windows.Forms.Button();
+            this.readData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // firstName
@@ -216,7 +217,7 @@
             "Analysis of Algorithms"});
             this.optionalCourses.Location = new System.Drawing.Point(40, 207);
             this.optionalCourses.Name = "optionalCourses";
-            this.optionalCourses.Size = new System.Drawing.Size(636, 172);
+            this.optionalCourses.Size = new System.Drawing.Size(636, 214);
             this.optionalCourses.TabIndex = 14;
             this.optionalCourses.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
@@ -249,7 +250,7 @@
             this.submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.submit.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.submit.Location = new System.Drawing.Point(696, 257);
+            this.submit.Location = new System.Drawing.Point(696, 302);
             this.submit.MaximumSize = new System.Drawing.Size(112, 36);
             this.submit.MinimumSize = new System.Drawing.Size(112, 36);
             this.submit.Name = "submit";
@@ -265,7 +266,7 @@
             this.exit.BackColor = System.Drawing.Color.DarkCyan;
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.exit.ForeColor = System.Drawing.Color.White;
-            this.exit.Location = new System.Drawing.Point(696, 342);
+            this.exit.Location = new System.Drawing.Point(696, 387);
             this.exit.MaximumSize = new System.Drawing.Size(112, 36);
             this.exit.MinimumSize = new System.Drawing.Size(112, 36);
             this.exit.Name = "exit";
@@ -281,7 +282,7 @@
             this.clear.BackColor = System.Drawing.Color.OrangeRed;
             this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.clear.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.clear.Location = new System.Drawing.Point(696, 299);
+            this.clear.Location = new System.Drawing.Point(696, 344);
             this.clear.MaximumSize = new System.Drawing.Size(112, 36);
             this.clear.MinimumSize = new System.Drawing.Size(112, 36);
             this.clear.Name = "clear";
@@ -522,7 +523,7 @@
             this.readFile.BackColor = System.Drawing.Color.Orange;
             this.readFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.readFile.ForeColor = System.Drawing.Color.Ivory;
-            this.readFile.Location = new System.Drawing.Point(696, 207);
+            this.readFile.Location = new System.Drawing.Point(696, 252);
             this.readFile.MaximumSize = new System.Drawing.Size(112, 36);
             this.readFile.MinimumSize = new System.Drawing.Size(112, 36);
             this.readFile.Name = "readFile";
@@ -532,12 +533,29 @@
             this.readFile.UseVisualStyleBackColor = false;
             this.readFile.Click += new System.EventHandler(this.readFile_Click);
             // 
+            // readData
+            // 
+            this.readData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.readData.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.readData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.readData.ForeColor = System.Drawing.Color.White;
+            this.readData.Location = new System.Drawing.Point(696, 207);
+            this.readData.MaximumSize = new System.Drawing.Size(112, 36);
+            this.readData.MinimumSize = new System.Drawing.Size(112, 36);
+            this.readData.Name = "readData";
+            this.readData.Size = new System.Drawing.Size(112, 36);
+            this.readData.TabIndex = 34;
+            this.readData.Text = "Read Data";
+            this.readData.UseVisualStyleBackColor = false;
+            this.readData.Click += new System.EventHandler(this.readData_Click);
+            // 
             // appForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(845, 406);
+            this.ClientSize = new System.Drawing.Size(845, 451);
+            this.Controls.Add(this.readData);
             this.Controls.Add(this.readFile);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -612,6 +630,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button readFile;
+        private System.Windows.Forms.Button readData;
     }
 }
 

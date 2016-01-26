@@ -1,0 +1,71 @@
+<Applicants>
+  <Applicant>
+    <PersonalInfo FirstName="Ivan" LastName="Ivanov" Age="22" Email="ivan@ivan.com">
+      <Address Country="Bulgaria" State="Sofia" City="Sofia" />
+      <PhoneNumber>44953950394</PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="63829" Course="4">
+      <MainCourse>Computer Science</MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis and Differential Equations  (must take as CS)" Credits="4">
+          <Professor FirstName="Joshua" LastName="Collins" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+        <OptionalCourse Name="Information Retrieval (must take as CS)" Credits="2">
+          <Professor FirstName="Ron" LastName="Moss" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="Ivan" LastName="Ivanov" Age="22" Email="ivan@ivan.com">
+      <Address Country="Bulgaria" State="Sofia" City="Sofia" />
+      <PhoneNumber>44953950394</PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="63829" Course="4">
+      <MainCourse>Computer Science</MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis and Differential Equations  (must take as CS)" Credits="4">
+          <Professor FirstName="Joshua" LastName="Collins" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+        <OptionalCourse Name="Information Retrieval (must take as CS)" Credits="2">
+          <Professor FirstName="Ron" LastName="Moss" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
+  <Applicant>
+    <PersonalInfo FirstName="Ivan" LastName="Ivanov" Age="22" Email="ivan@ivan.com">
+      <Address Country="Bulgaria" State="Sofia" City="Sofia" />
+      <PhoneNumber>44953950394</PhoneNumber>
+    </PersonalInfo>
+    <StudentInfo FacultyNumber="63829" Course="4">
+      <MainCourse>Computer Science</MainCourse>
+      <OptionalCourses>
+        <OptionalCourse Name="Introduction to Compilers" Credits="7">
+          <Professor FirstName="Linda" LastName="Rhymes" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis and Differential Equations  (must take as CS)" Credits="4">
+          <Professor FirstName="Joshua" LastName="Collins" />
+        </OptionalCourse>
+        <OptionalCourse Name="Numerical Analysis: Linear and Nonlinear Problems (must take as CS)" Credits="5">
+          <Professor FirstName="Phill" LastName="Baker" />
+        </OptionalCourse>
+        <OptionalCourse Name="Information Retrieval (must take as CS)" Credits="2">
+          <Professor FirstName="Ron" LastName="Moss" />
+        </OptionalCourse>
+      </OptionalCourses>
+    </StudentInfo>
+  </Applicant>
+</Applicants>

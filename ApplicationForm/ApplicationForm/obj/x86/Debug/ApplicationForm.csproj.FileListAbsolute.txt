@@ -14,3 +14,4 @@ D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.csproj.GenerateResource.Cache
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.exe
 D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.pdb
+D:\SU\3rd_Course\XML\Project\ApplicationFormXML\ApplicationForm\ApplicationForm\obj\x86\Debug\ApplicationForm.csprojResolveAssemblyReference.cache
